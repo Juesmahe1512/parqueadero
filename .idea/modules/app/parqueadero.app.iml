@@ -25,9 +25,17 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
-        <compilerSettings />
+      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
         <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions-runtime/1.3.61/289bdf25b4886749e040c7a7d3aab8a57f85c631/kotlin-android-extensions-runtime-1.3.61.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.61/70dffc5f8ac5ea7c34f30deac5b9d8b1d48af066/kotlin-stdlib-jdk7-1.3.61.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/261ee46875e7467446ae5f316b8216ab/core-ktx-1.2.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.61/4702105e97f7396ae41b113fdbdc180ec1eb1e36/kotlin-stdlib-1.3.61.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.61/65abb71d5afb850b68be03987b08e2c864ca3110/kotlin-stdlib-common-1.3.61.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/870698884f80cdd7ecb3ac96730e5ffc/appcompat-1.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/52b0e915c805ffcd258c0f3a2a6bc7f4/fragment-1.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/d4f3e8bc2fcf4b71853bea0896c8640d/appcompat-resources-1.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/142eb6cd276f5dd7746b5a5ec8deea42/drawerlayout-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/728b7691cbf236514e7ffc645952cd10/viewpager-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/33973c800c308e569648c0f0c46c9d65/loader-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/c0ab5bae5fff6ad7de08745df2798018/activity-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/f2ac2bf7890f31d9ab17576d25b83b05/vectordrawable-animated-1.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/b068f92eda36cfadb80d403440f0f757/vectordrawable-1.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/eebe108b29e6087bc32d5cc43e4dfd73/customview-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/ce93d5d03f75d26e1ed1a09854e36d24/core-1.2.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/0d5c4dc4cd3ac729309f864259ddc2c5/cursoradapter-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/ba379db2efe765af1d41a491b45b2819/versionedparcelable-1.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/09406fa8bb9747e54c516606ddf9a19f/lifecycle-livedata-2.2.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/4505b1cfc2cf8bf87d1e125388944210/lifecycle-livedata-core-2.2.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/71d1b1462f13610ead7e3f59a58025bb/core-runtime-2.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/a066157adbc4c1e22742b35db7004b93/lifecycle-runtime-2.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/6485694dd0aec8ea673c0a1fd3cf6104/savedstate-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/6b04265d6a0a1aea6b63673c263267ee/lifecycle-viewmodel-2.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.2.0/4ef09a745007778eef83b92f8f23987a8ea59496/lifecycle-common-2.2.0.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/dc061614aa317db5f4efa0c162174016/interpolator-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0/e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8/annotation-1.1.0.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/a9bd5c2cd3d25a9a0285e32c6b56493c/constraintlayout-1.1.3/jars/classes.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout-solver/1.1.3/54abe9ffb22cc9019b0b6fcc10f185cc4e67b34e/constraintlayout-solver-1.1.3.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.27/7bee2792b10523e298a7de508635c6eed0c309be/dagger-2.27.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar:/Users/juan.mazo/Library/Android/sdk/platforms/android-29/android.jar:/Users/juan.mazo/Library/Android/sdk/build-tools/29.0.2/core-lambda-stubs.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="jvmTarget" value="1.8" />
           <option name="languageVersion" value="1.3" />
           <option name="apiVersion" value="1.3" />
           <option name="pluginOptions">
@@ -38,7 +46,20 @@
             </array>
           </option>
           <option name="pluginClasspaths">
-            <array />
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20181211/216c2e14b070f334479d800987affe4054cd563f/trove4j-1.0.20181211.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.61/54ca7c214a5cd73cd887a42002266e25440097f2/kotlin-android-extensions-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.61/c35c0833d5a1e3d229359758482c480306724618/kotlin-compiler-embeddable-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.3.61/4de83e41a92c8395d89ab2e81d26b788ba163824/kotlin-daemon-embeddable-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.61/2e07c9a84c9e118efb70eede7e579fd663932122/kotlin-reflect-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.61/e5feb39c8de63dcbdc1154b34ca4413874231605/kotlin-script-runtime-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.61/65abb71d5afb850b68be03987b08e2c864ca3110/kotlin-stdlib-common-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.61/4702105e97f7396ae41b113fdbdc180ec1eb1e36/kotlin-stdlib-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+            </array>
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
           </option>
         </compilerArguments>
       </configuration>
