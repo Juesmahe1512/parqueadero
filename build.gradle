@@ -26,13 +26,5 @@ task clean(type: Delete) {
 }
 
 task test {
-    unitTests.all {
-        useJUnit()
-
-        if (it.name == 'testIntegrationUnitTest') {
-            options {
-                excludeCategories 'com.example.parqueadero'
-            }
-        }
-    }
+    useJUnit()
 }
