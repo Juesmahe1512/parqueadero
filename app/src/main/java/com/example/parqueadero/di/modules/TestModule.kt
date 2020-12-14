@@ -11,7 +11,7 @@ class TestModule(var activity: MainActivity) {
 
     @Provides
     @Singleton
-    fun  providePresenters():TestPresenter {
+    fun providePresenters(): TestPresenter {
         return TestPresenter(this.activity)
     }
 }
