@@ -37,4 +37,5 @@ tasks.withType(Test) {
 
 
 task test(type: Test){
+    outputs.upToDateWhen { false }
 }
