@@ -28,7 +28,7 @@ pipeline {
         stage('Compile & Unit Tests') {
             steps{
                 echo "------------>Unit Tests<------------"
-                sh './gradlew clean build test'
+                sh './gradlew test'
             }
         }
 
