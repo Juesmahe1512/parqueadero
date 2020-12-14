@@ -37,10 +37,4 @@ tasks.withType(Test) {
 
 
 task test(type: Test){
-    compileClasspath += main.output + test.output
-    runtimeClasspath += main.output + test.output
-    srcDir file('src/test/java')
-    resources.srcDir file('src/test/resources')
-    testClassesDirs = sourceSets.test.output.classesDirs
-    classpath = sourceSets.test.runtimeClasspath
 }
