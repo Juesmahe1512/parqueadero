@@ -24,6 +24,12 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
-task test {
+
+tasks.withType(Test) {
     useJUnitPlatform()
+    testLogging {
+        exceptionFormat "full"
+        events "started", "skipped", "passed", "failed"
+        showStandardStreams true
+    }
 }
