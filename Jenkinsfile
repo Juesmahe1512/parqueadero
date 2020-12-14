@@ -21,7 +21,7 @@ pipeline {
         stage('Checkout') {
             steps{
                 echo "------------>Checkout<------------"
-                sh 'gradle --b ./build.gradle clean compileKotlin'
+                sh 'gradle --b ./build.gradle clean compileKotlinAndroid'
                 sh 'gradle --b ./build.gradle clean'
             }
         }
