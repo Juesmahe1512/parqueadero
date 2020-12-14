@@ -25,8 +25,38 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" useProjectSettings="false">
-        <compilerSettings />
+      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/transforms-2/files-2.1/49da0f3b04a389890d956f3c86c44d98/core-ktx-1.3.2/jars/classes.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.71/898273189ad22779da6bed88ded39b14cb5fd432/kotlin-stdlib-1.3.71.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.71/e71c3fef58e26affeb03d675e91fd8abdd44aa7b/kotlin-stdlib-common-1.3.71.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/fc4d82d1e7ec89f8af9bad45d526a8fd/material-1.2.1/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/12f46c346a6dd89be11fa0b28bacb935/constraintlayout-2.0.4/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/2a0fa4150c2e00b8917715dd1bfbabdf/appcompat-1.2.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/cbfd20c9e8828262e7f3a03478fdc4a3/viewpager2-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/cf37e104488d1220c1d805536203ecf7/fragment-1.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/df3e7f8c09bb9a9ccb131c692503240b/appcompat-resources-1.2.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/31c8992225a9ad62ebb765c1822db009/drawerlayout-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/ec8c360eee4d951e8b621c689fccace3/coordinatorlayout-1.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/ad7b593a804c4d5ece7fd1c72c4e8383/recyclerview-1.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/5701fb8a3554bc71bcc9f58003476f37/transition-1.2.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/3b416bfd1fb101ed3374cc603438fc05/vectordrawable-animated-1.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/b5c336d1e615c578db3d0ec926534c63/vectordrawable-1.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/7b358c5bc990eb54f0c528009ccaa51f/viewpager-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/216408f6612884b7b28ddf9052eebdb3/loader-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/af48ca77b12611c81f7630d4eac0bcea/activity-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/08f9449b232ac01fcb7700caeee41f7a/customview-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/a6351b97e8c93b878460e64aa81dc8ff/core-1.3.2/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/eddff7790bb942d37355cd0f58d90202/cursoradapter-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/b38664ad8fe03b1dc7577711fb3793f4/cardview-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/f7cc4d3f4d9ae5478cee42cafd3fed4a/lifecycle-runtime-2.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/7346eb147603ebe17ca99545e06a1e75/versionedparcelable-1.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/5c6a295e47af35135b05f22122c1c293/lifecycle-viewmodel-2.1.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/8163a157fe978c07bef5bc374d832259/savedstate-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/4f2fedf1222667965f68eb86d71b4a71/lifecycle-livedata-2.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/7ac7566cac850d92a966b49fc7aaa30d/lifecycle-livedata-core-2.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.1.0/c67e7807d9cd6c329b9d0218b2ec4e505dd340b7/lifecycle-common-2.1.0.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/41eeab7be1db22e801a779a494894936/core-runtime-2.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/f3b6f7fed50f5a8e3b369d270a220000/interpolator-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0/e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8/annotation-1.1.0.jar:/Users/juan.mazo/.gradle/caches/transforms-2/files-2.1/f5382f8f81be6be697c03c6f5a447dfd/annotation-experimental-1.0.0/jars/classes.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout-solver/2.0.4/1f001d7db280a89a6c26b26a66eb064bb6d5efeb/constraintlayout-solver-2.0.4.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.1/73ce0d997524a7fd3b06cfc7adbb9e9ef4854754/dagger-2.1.jar:/Users/juan.mazo/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar:/Users/juan.mazo/Library/Android/sdk/platforms/android-30/android.jar:/Users/juan.mazo/Library/Android/sdk/build-tools/30.0.2/core-lambda-stubs.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20181211/216c2e14b070f334479d800987affe4054cd563f/trove4j-1.0.20181211.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.61/c35c0833d5a1e3d229359758482c480306724618/kotlin-compiler-embeddable-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.3.61/4de83e41a92c8395d89ab2e81d26b788ba163824/kotlin-daemon-embeddable-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.61/2e07c9a84c9e118efb70eede7e579fd663932122/kotlin-reflect-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.61/e5feb39c8de63dcbdc1154b34ca4413874231605/kotlin-script-runtime-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.61/65abb71d5afb850b68be03987b08e2c864ca3110/kotlin-stdlib-common-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.61/4702105e97f7396ae41b113fdbdc180ec1eb1e36/kotlin-stdlib-1.3.61.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+            </array>
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
       </configuration>
     </facet>
   </component>
@@ -125,5 +155,10 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-idling-resource:3.3.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.13.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-core:2.7.22" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.junit.jupiter:junit-jupiter-params:5.3.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.3.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.junit.platform:junit-platform-commons:1.3.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apiguardian:apiguardian-api:1.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.opentest4j:opentest4j:1.1.1" level="project" />
   </component>
 </module>
