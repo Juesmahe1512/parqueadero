@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/parqueadero.iml" filepath="$PROJECT_DIR$/.idea/modules/parqueadero.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/parqueadero.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/parqueadero.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Parqueadero.iml" filepath="$PROJECT_DIR$/.idea/modules/Parqueadero.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Parqueadero.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Parqueadero.app.iml" />
     </modules>
   </component>
 </project>

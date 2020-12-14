@@ -25,5 +25,5 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 task test {
-
+    useJUnitPlatform()
 }
