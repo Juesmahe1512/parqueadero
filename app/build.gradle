@@ -4,6 +4,7 @@ plugins {
 }
 apply plugin: 'kotlin-kapt'
 apply plugin: 'de.mannodermaus.android-junit5'
+apply plugin:'base'
 
 android {
     compileSdkVersion 30
