@@ -1,5 +1,6 @@
 package com.example.parqueadero
 
+import android.appwidget.AppWidgetProviderInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button

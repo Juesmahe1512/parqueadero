@@ -1,8 +1,10 @@
 package com.example.parqueadero
 
+import com.example.parqueadero.presenters.PruebaADN
+import com.example.parqueadero.presenters.TestPresenter
+import org.junit.Assert
+import org.junit.Assert.assertEquals
 import org.junit.Test
-
-import org.junit.Assert.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -16,7 +18,17 @@ class ExampleUnitTest {
         assertEquals(4, 2 + 2)
     }
 
+    @Test
+    fun pruebaSumandosADN() {
+        //Arrange
+        var prueba = PruebaADN()
+        var resultadoEsperado = 10
 
+        //Act
+        var resultado = prueba.pruebaSumaDosNumeros(6,5)
 
+        //Assert
+        assertEquals(resultadoEsperado,resultado)
+    }
 
 }

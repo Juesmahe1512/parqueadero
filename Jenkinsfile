@@ -25,7 +25,14 @@ pipeline {
             }
         }
 
-        stage('Compile & Unit Tests') {
+        stage('Build') {
+                    steps {
+                        echo "------------>Build<------------"
+                        sh 'gradle --b ./build.gradle build -x test'
+                    }
+        }
+
+        stage('Unit Tests') {
             steps{
                 echo "------------>Unit Tests<------------"
                 sh './gradlew test --debug'
@@ -41,12 +48,6 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                echo "------------>Build<------------"
-                sh 'gradle --b ./build.gradle build -x test'
-            }
-        }
     }
 
     post {
