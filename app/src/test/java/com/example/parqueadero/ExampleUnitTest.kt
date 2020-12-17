@@ -20,6 +20,7 @@ class ExampleUnitTest {
 
     @Test
     fun pruebaSumandosADN() {
+
         //Arrange
         var prueba = PruebaADN()
         var resultadoEsperado = 10
@@ -29,6 +30,21 @@ class ExampleUnitTest {
 
         //Assert
         assertEquals(resultadoEsperado,resultado)
+    }
+
+    @Test
+    fun sumaTreNumeros(){
+
+        //Arrange
+        var prueba = PruebaADN()
+        var resultadoEsperado = 15
+
+        //Act
+        var resultado = prueba.sumaTresNumeros(5,5,5)
+
+        //Asert
+        assertEquals(resultadoEsperado,resultado)
+
     }
 
 }

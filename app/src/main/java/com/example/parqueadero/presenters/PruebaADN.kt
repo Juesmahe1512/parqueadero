@@ -8,4 +8,8 @@ public class PruebaADN: TestADN {
         println(resultado)
         return resultado
     }
+
+    fun sumaTresNumeros(sumandoUno: Int, sumandoDos: Int, sumandoTres:Int): Int {
+        return sumandoUno + sumandoDos + sumandoTres
+    }
 }
