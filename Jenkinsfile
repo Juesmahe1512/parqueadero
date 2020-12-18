@@ -16,8 +16,6 @@ pipeline {
         }
 
     //Aquí comienzan los “items” del Pipeline
-    stages{
-        sh 'gradle --b ./build.gradle'
         stage('Checkout') {
             steps{
                 echo "------------>Checkout<------------"
