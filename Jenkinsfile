@@ -21,7 +21,7 @@ pipeline {
         stage('Checkout') {
             steps{
                 echo "------------>Checkout<------------"
-                sh 'gradle --b ./build.gradle clean'
+                sh 'gradle --b ./build.gradlew clean'
                 checkout([
                     $class: 'GitSCM',
                     branches: [[name: '*/master']],
