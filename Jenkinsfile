@@ -20,7 +20,19 @@ pipeline {
         stage('Checkout') {
             steps{
                 echo "------------>Checkout<------------"
-                sh './build.gradle clean'
+                sh 'gradle --b ./build.gradle clean'
+                checkout([
+                $class: 'GitSCM',
+                branches: [[name: '*/master']],
+                doGenerateSubmoduleConfigurations: false,
+                extensions: [],
+                gitTool: 'Default',
+                submoduleCfg: [],
+                userRemoteConfigs: [[
+                credentialsId: 'GitHub_Juesmahe1512',
+                url:'https://github.com/Juesmahe1512/parqueadero'
+                ]]
+                ])
 
             }
         }
