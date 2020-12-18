@@ -33,7 +33,7 @@ pipeline {
                     url:'https://github.com/Juesmahe1512/parqueadero'
                     ]]
                 ])
-                sh 'gradle --b ./build.gradle clean'
+                sh 'gradlew --b ./build.gradle clean'
             }
         }
 
