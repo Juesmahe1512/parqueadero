@@ -36,6 +36,13 @@ pipeline {
             }
         }
 
+        stage('Build') {
+                     steps {
+                     echo "------------>Build<------------"
+                     sh 'gradle --b ./build.gradlew build -x test'
+                     }
+        }
+
         stage('Unit Tests') {
                     steps{
                         echo "------------>Unit Tests<------------"
@@ -49,13 +56,6 @@ pipeline {
                         withSonarQubeEnv('Sonar') {
                             sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -project.settings=sonar-project.properties"
                         }
-                    }
-        }
-
-        stage('Build') {
-                    steps {
-                        echo "------------>Build<------------"
-                        sh 'gradlew --b ./build.gradle build -x test'
                     }
         }
 
