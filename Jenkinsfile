@@ -36,27 +36,27 @@ pipeline {
             }
         }
 
+        stage('Unit Tests') {
+                    steps{
+                        echo "------------>Unit Tests<------------"
+                        sh './gradle test --debug'
+                    }
+        }
+
+        stage('Static Code Analysis') {
+                    steps{
+                        echo '------------>Análisis de código estático<------------'
+                        withSonarQubeEnv('Sonar') {
+                            sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -project.settings=sonar-project.properties"
+                        }
+                    }
+        }
+
         stage('Build') {
                     steps {
                         echo "------------>Build<------------"
                         sh 'gradle --b ./build.gradle build -x test'
                     }
-        }
-
-        stage('Unit Tests') {
-            steps{
-                echo "------------>Unit Tests<------------"
-                sh './gradle test --debug'
-            }
-        }
-
-        stage('Static Code Analysis') {
-            steps{
-                echo '------------>Análisis de código estático<------------'
-                withSonarQubeEnv('Sonar') {
-                    sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -Dproject.settings=sonar-project.properties"
-                }
-            }
         }
 
     }
