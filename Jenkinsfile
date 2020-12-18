@@ -20,7 +20,7 @@ pipeline {
         stage('Checkout') {
             steps{
                 echo "------------>Checkout<------------"
-                sh 'gradle --b ./build.gradle clean'
+                sh './build.gradle clean'
 
             }
         }
