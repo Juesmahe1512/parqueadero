@@ -17,7 +17,7 @@ pipeline {
 
     //Aquí comienzan los “items” del Pipeline
     stages{
-        sh 'gradle --b .//build.gradle clean'
+        sh 'gradle --b ./parqueadero/build.gradle clean compileJava'
         stage('Checkout') {
             steps{
                 echo "------------>Checkout<------------"
