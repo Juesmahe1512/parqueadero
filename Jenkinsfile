@@ -21,6 +21,7 @@ pipeline {
             steps{
                 echo "------------>Checkout<------------"
                 sh 'gradle --b ./build.gradle clean'
+
             }
         }
 
@@ -34,7 +35,7 @@ pipeline {
         stage('Unit Tests') {
             steps{
                 echo "------------>Unit Tests<------------"
-                sh './gradlew test --debug'
+                sh './gradle test --debug'
             }
         }
 
