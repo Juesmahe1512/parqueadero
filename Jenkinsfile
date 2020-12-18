@@ -17,7 +17,7 @@ pipeline {
 
     //Aquí comienzan los “items” del Pipeline
     stages{
-        sh 'gradle --b ./Ceiba-Parqueadero/build.gradle'
+        sh 'gradle --b ./build.gradle'
         stage('Checkout') {
             steps{
                 echo "------------>Checkout<------------"
