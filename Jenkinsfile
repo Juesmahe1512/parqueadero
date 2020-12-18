@@ -21,6 +21,7 @@ pipeline {
         stage('Checkout') {
             steps{
                 echo "------------>Checkout<------------"
+                sh 'gradle --b ./build.gradle clean'
                 checkout([
                     $class: 'GitSCM',
                     branches: [[name: '*/master']],
@@ -39,14 +40,14 @@ pipeline {
         stage('Build') {
                      steps {
                      echo "------------>Build<------------"
-                     sh 'gradlew build'
+                     sh 'gradle --b ./build.gradle build -x test'
                      }
         }
 
         stage('Unit Tests') {
                     steps{
                         echo "------------>Unit Tests<------------"
-                        sh './gradlew test'
+                        sh 'gradle --b ./build.gradle test'
                     }
         }
 
