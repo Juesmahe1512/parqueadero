@@ -33,6 +33,7 @@ pipeline {
                     url:'https://github.com/Juesmahe1512/parqueadero'
                     ]]
                 ])
+                sh 'gradle --b ./Ceiba-Parqueadero/build.gradle clean'
             }
         }
 
@@ -55,7 +56,7 @@ pipeline {
         stage('Build') {
                     steps {
                         echo "------------>Build<------------"
-                        sh 'gradle --b ./build.gradle build -x test'
+                        sh 'gradlew --b ./build.gradle build -x test'
                     }
         }
 
