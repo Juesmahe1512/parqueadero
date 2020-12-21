@@ -48,7 +48,6 @@ pipeline {
         stage('Unit Tests') {
                     steps{
                         echo "------------>Unit Tests<------------"
-                        sh 'gradlew compileDebug --stacktrace'
                         sh './gradlew test'
                     }
         }
