@@ -26,7 +26,7 @@ class ExampleUnitTest {
         var resultadoEsperado = 10
 
         //Act
-        var resultado = prueba.pruebaSumaDosNumeros(6,5)
+        var resultado = prueba.pruebaSumaDosNumeros(5,5)
 
         //Assert
         assertEquals(resultadoEsperado,resultado)
