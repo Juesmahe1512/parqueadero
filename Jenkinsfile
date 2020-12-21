@@ -47,7 +47,7 @@ pipeline {
         stage('Unit Tests') {
                     steps{
                         echo "------------>Unit Tests<------------"
-                     sh './gradlew clean test --no-deamon'
+                     sh './gradlew clean test'
                     }
 
         }
