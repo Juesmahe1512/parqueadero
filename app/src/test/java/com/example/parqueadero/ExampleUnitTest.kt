@@ -23,7 +23,7 @@ class ExampleUnitTest {
 
         //Arrange
         var prueba = PruebaADN()
-        var resultadoEsperado = 10
+        var resultadoEsperado = 11
 
         //Act
         var resultado = prueba.pruebaSumaDosNumeros(5,5)
