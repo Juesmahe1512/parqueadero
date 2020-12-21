@@ -47,12 +47,7 @@ pipeline {
         stage('Unit Tests') {
                     steps{
                         echo "------------>Unit Tests<------------"
-                     try {
-                        sh './gradlew clean test --no-deamon'
-                     } finally {
-                        junit '**/build/test-results/test/*.xml'
-                     }
-
+                     sh './gradlew clean test --no-deamon'
                     }
 
         }
