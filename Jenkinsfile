@@ -40,6 +40,7 @@ pipeline {
         stage('Build') {
                      steps {
                      echo "------------>Build<------------"
+                     ?
                      sh './gradlew build -x test'
                      }
         }
@@ -47,6 +48,7 @@ pipeline {
         stage('Unit Tests') {
                     steps{
                         echo "------------>Unit Tests<------------"
+                        sh 'gradlew compileDebug --stacktrace'
                         sh './gradlew test'
                     }
         }
