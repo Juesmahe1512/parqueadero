@@ -40,7 +40,6 @@ pipeline {
         stage('Build') {
                      steps {
                      echo "------------>Build<------------"
-                     sh './gradlew compileDebug --stacktrace'
                      sh './gradlew build -x test'
                      }
         }
